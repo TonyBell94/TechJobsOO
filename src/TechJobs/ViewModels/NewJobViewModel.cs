@@ -12,7 +12,7 @@ namespace TechJobs.ViewModels
         public string Name { get; set; }
 
         [Required]
-        [Display(Name = "Employer")]
+        [Display(Name = "Employers")]
         public int EmployerID { get; set; }
 
         [Required]
