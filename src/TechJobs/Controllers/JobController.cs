@@ -37,13 +37,14 @@ namespace TechJobs.Controllers
         {
             if (ModelState.IsValid)
             {
-            Job newJob = new Job
-            {
-                Name = newJobViewModel.Name,
-                //Employer = newJobViewModel.Employers,
-                //Location = newJobViewModel.Locations,
-                //CoreCompetency = newJobViewModel.CoreCompetencies,
-                //PositionType = newJobViewModel.PositionTypes,
+                Job newJob = new Job
+                {
+
+                    Name = newJobViewModel.Name,
+                    Employer = jobData.Employers.Find(newJobViewModel.EmployerID),
+                    Location = jobData.Locations.Find(newJobViewModel.Location),
+                    CoreCompetency = jobData.CoreCompetencies.Find(newJobViewModel.Core),
+                    PositionType = jobData.PositionTypes.Find(newJobViewModel.Position),
             };
 
 

@@ -17,7 +17,7 @@ namespace TechJobs.ViewModels
 
         [Required]
         [Display(Name = "Locations")]
-        public int Loca { get; set; }
+        public int Location { get; set; }
 
         [Required]
         [Display(Name = "Core Competencies")]
@@ -25,7 +25,7 @@ namespace TechJobs.ViewModels
 
         [Required]
         [Display(Name = "Position Types")]
-        public int Postition { get; set; }
+        public int Position { get; set; }
 
 
 
@@ -33,6 +33,11 @@ namespace TechJobs.ViewModels
 
         // TODO #3 - Included other fields needed to create a job,
         // with correct validation attributes and display names.
+
+        //public Employer Emp { get; set; }
+        //public Location Locationss { get; set; }
+        //public CoreCompetency CoreCompetenciess { get; set; }
+        //public PositionType PositionType { get; set; }
 
         public List<SelectListItem> Employers { get; set; } = new List<SelectListItem>();
         public List<SelectListItem> Locations { get; set; } = new List<SelectListItem>();
